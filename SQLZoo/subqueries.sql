@@ -24,7 +24,7 @@ WITH   pog as (SELECT population FROM world  WHERE name = 'Germany')
   SELECT name, CONCAT(ROUND(100*population/(SELECT population FROM pog), 0), '%') as Percentage FROM world 
     WHERE continent = 'Europe'
 
-  -- Задача 6: Какие страны имеют ВВП больше, чем любая другая страна Европы? [Укажите только название .] (Для некоторых стран значения ВВП могут быть нулевыми)
+-- Задача 6: Какие страны имеют ВВП больше, чем любая другая страна Европы? [Укажите только название .] (Для некоторых стран значения ВВП могут быть нулевыми)
 SELECT name FROM world 
   WHERE gdp > (SELECT MAX(gdp) FROM world 
     WHERE continent = 'Europe')
@@ -35,6 +35,8 @@ SELECT continent, name, area FROM world x
     (SELECT area FROM world y
         WHERE y.continent=x.continent
           AND area>0)
-    HAVING AVG(amount) > 50000
 
-
+-- Задача 8: Перечислите каждый континент и название страны, которая стоит первой в алфавитном порядке.
+SELECT continent, name FROM world x 
+  WHERE NOT EXISTS (SELECT name FROM world y 
+    WHERE y.continent=x.continent and x.name > y.name)
