@@ -1,13 +1,19 @@
-# SQL Practice — Mahmud Saitmirzayev
-
-SQL практика на реальных данных Uzum ТАШ-110 и SQLZoo.
-
-## Содержание
-- `week1/day1_basics.sql` — SELECT, WHERE, GROUP BY, HAVING
-- `week1/day_subqueries.sql` — подзапросы, UNION, WITH, коррелированные подзапросы
-
-## Стек
-MySQL · DataSpell · GitHub
-
-## Цель
-Подготовка к роли Junior Data Analyst в e-commerce
+README_1
+SQL Practice — Maxmud Saitmirzayev
+SQL-портфолио: от базовых учебных задач до самостоятельного проекта на реальных бизнес-данных.
+ Главный проект
+UZUM/uzum_final_project.sql — финальный аналитический проект на реальных данных пункта выдачи Uzum Market (ТАШ-1), 5124 заказа за период 01–15 июля 2026.
+7 бизнес-вопросов, включая воронку статусов, динамику заказов, топ клиентов, среднее время обработки, загрузку ячеек, анализ подарочных карт и поиск клиентов с повторными возвратами. Особое внимание уделено проверке гипотез: находка про аномальный рост заказов по средам была протестирована и опровергнута после нормализации данных.
+Структура репозитория
+UZUM/ — практика и финальный проект на реальных данных пункта выдачи Uzum Market
+uzum_final_project.sql — итоговый проект (7 вопросов, полный SQL с результатами)
+day1_basics.sql, subqueries.sql — ранняя практика (SELECT, агрегаты, подзапросы) на первой версии данных
+SQLZoo/ — учебные задачи с sqlzoo.net: SUM/COUNT, JOIN, self JOIN, подзапросы, CASE WHEN
+LeetCode/ — решения из LeetCode SQL 50
+week1/ — ранние учебные заметки по подзапросам (SQLZoo world-таблица)
+Изученные темы
+SELECT/WHERE/ORDER BY/LIMIT · агрегатные функции (SUM, COUNT, AVG, MAX, MIN) · GROUP BY/HAVING · JOIN (INNER, LEFT, self JOIN) · подзапросы (обычные и коррелированные) · производные таблицы · CASE WHEN · COALESCE · ALL/ANY · работа с датами (STRFTIME, JULIANDAY) · работа со строками (SUBSTR, конкатенация)
+Стек
+SQLite · DataSpell · GitHub
+Цель
+Подготовка к позиции Junior Data Analyst в e-commerce, с перспективой международного рынка (Европа).
